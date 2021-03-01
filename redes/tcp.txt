@@ -1,0 +1,21 @@
+Nivel de aplicación
+ Este nivel proporciona comunicación entre procesos o aplicaciones en computadores distintos. En esta capa se incluye la funcionalidad de los niveles 5 (sesión), 6 (presentación) y 7 (aplicación) del modelo OSI. 
+Este nivel proporciona a las aplicaciones informáticas el acceso a la red de comunicaciones. Este nivel facilita diferentes servicios de comunicaciones como, por ejemplo, transferencia de archivos, correo electrónico, etc.
+Nivel de transporte
+Este nivel es el encargado de transferir datos entre ordenadores sin tener en cuenta la tecnología de la red sobre la que se transmiten. Esta capa garantiza una transmisión fiable; es decir, asegura que los datos llegan al destino sin errores y en el mismo orden que fueron enviados. Las funciones de este nivel se asemejan a las del nivel 4 (transporte) del modelo OSI.   Las principales funciones son:
+Este nivel se encarga de establecer una conversación entre el origen y destino. Entre las funciones de este nivel de la arquitectura están: 
+Control de los errores que se producen en la transmisión entre el emisor y el receptor. 
+Ordenación de los paquetes que llegan al emisor. La información que envía el emisor se ha fragmentado en paquetes que pueden llegar al receptor por diferentes rutas. Esto hace que los paquetes lleguen desordenados al destino. El receptor debe ser capaz de ordenar los paquetes para componer el mensaje original. 
+Nivel de Internet
+Este nivel se encarga de direccionar y guiar los datos desde el origen al destino a través de la red o redes intermedias. Las funciones de este nivel son equiparables a las del nivel 3 (red) del modelo OSI. 
+En este nivel facilita entre otras las siguientes funciones: 
+Fragmentación de la información en fragmentos más pequeños, denominados paquetes. 
+Envío de los paquetes a la red. Cada uno de los paquetes viaja de forma independiente hacia el destino. Los diferentes paquetes pueden atravesar y viajar a través de redes diferentes. 
+Encaminamiento; es decir, buscar un camino entre todos los posibles para que los paquetes llegen a su destino. 
+Nivel de acceso a la red
+Nivel de acceso a la red: Este nivel depende de la tecnología de red utilizada y no se especifica de antemano dentro de TCP/IP. Este nivel es el responsable del intercambio de datos entre el sistema final y la red a la que está conectado y de la definición de las características del medio, señalización y codificación de las señales. Esta capa se encarga de realizar las funciones que se engloban en los niveles 1 (físico) y 2 (enlace de datos) del modelo OSI. 
+En este nivel se realizan las siguientes funciones: 
+Transmisión de los dígitos binarios 
+Detección y/o corrección de los errores que se han podido producir en la transmisión entre dos nodos adyacentes. 
+Control de flujo con el fin de evitar la saturación del receptor 
+Control de acceso a medios compartidos 

@@ -1,0 +1,42 @@
+Capa 1: Física
+Este nivel se encarga directamente de los elementos físicos de la conexión. Gestiona los procedimientos a nivel electrónico para que la cadena de bits de información viaje desde el transmisor al receptor sin alteración alguna.
+
+Define el medio físico de transmisión: cables de pares trenzados, cable coaxial, ondas y fibra óptica
+Maneja las señales eléctricas y transmite el flujo de bits
+Define las características de los materiales, como conectores y niveles de tensión
+Algunas normas relativas a este nivel son: ISO 2110, EIA-232, V.35, X.24, V24, V.28
+
+Capa 2: Enlace de datos
+Este nivel se encarga de proporcionar los medios funcionales para establecer la comunicación de los elementos físicos. Se ocupa del direccionamiento físico de los datos, el acceso al medio y especialmente de la detección de errores en la transmisión.
+
+Esta capa construye las tramas de bits con la información y además otros elementos para controlar que la transmisión se haga de forma correcta. El elemento típico que realiza las funciones de esta capa es el switch o también el router, que se encarga de recibir y enviar datos desde un transmisor a un receptor
+
+Los protocolos más conocidos de este enlace son los IEEE 802 para las conexiones LAN y IEEE 802.11 para las conexiones WiFi.
+
+Capa 3: Red
+Esta capa se encarga de la identificación del enrutamiento entre dos o más redes conectadas. Este nivel hará que los datos puedan llegar desde el transmisor al receptor siendo capaz de hacer las conmutaciones y encaminamientos necesarios para que el mensaje llegue. Debido a esto es necesario que esta capa conozca la topología de la red en la que opera.
+
+El protocolo más conocido que se encarga de esto es el IP. También encontramos otros como IPX, APPLETALK o ISO 9542.
+
+Capa 4: Transporte
+Este nivel se encarga de realizar el transporte de los datos que se encuentran dentro del paquete de transmisión desde el origen al destino. Esto se realiza de forma independiente al tipo de red que haya detectado el nivel inferior. La unidad de información o PDU antes vista, también le llamamos Datagrama si trabaja con el protocolo UDP orientado al envío sin conexión, o Segmento, si trabaja con el protocolo TCP orientado a la conexión.
+
+Esta capa trabaja con los puertos lógicos como son el 80, 443, etc. Además, es la capa principal en donde se debe proporcionar la calidad suficiente para que la transmisión del mensaje se realice correctamente y con las exigencias del usuario.
+
+Niveles OSI orientados a aplicación
+Estos niveles trabajan directamente con las aplicaciones que solicitan los servicios de niveles inferiores. Se encarga de adecuar la información para que sea comprensible desde el punto de vista de un usuario, mediante una interfaz y un formato.
+
+Capa 5: Sesión
+Mediante este nivel se podrá controlar y mantener activo el enlace entre las máquinas que están transmitiendo información. De esta forma se asegurará que una vez establecida la conexión, esta e mantengas hasta que finalice la transmisión.
+
+Se encargará del mapeo de la dirección de sesión que introduce el usuario para pasarlas a direcciones de transporte con las que trabajan los niveles inferiores.
+
+Capa 6: Presentación
+Como su propio nombre intuye, esta capa se encarga de la representación de la información transmitida. Asegurará que los datos que nos llegan a los usuarios sean entendibles a pesar de los distintos protocolos utilizados tanto en un receptor como en un transmisor. Traducen una cadena de caracteres en algo entendible, por así decirlo.
+
+En esta capa no se trabaja con direccionamiento de mensajes ni enlaces, sino que es la encargada de trabajar con el contenido útil que nosotros queremos ver.
+
+Capa 7: Aplicación
+Este es el último nivel, y en encargado de permitir a los usuarios ejecutar acciones y comandos en sus propias aplicaciones como por ejemplo un botón para enviar un email o un programa para enviar archivos mediante FTP. Permite también la comunicación entre el resto de capas inferiores.
+
+un ejemplo de la capa de aplicación puede ser el protocolo SMTP para el envío de correos electrónicos, programas de transmisión de ficheros por FTP, etc.
